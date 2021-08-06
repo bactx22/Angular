@@ -1,0 +1,23 @@
+<button class="btn btn-primary btn-sm" routerLink="add">Add</button>
+<table class="table table-bordered border-dark mt-5 list">
+    <thead>
+        <th>STT</th>
+        <th>Tên Danh mục</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let catego of category; index as i">
+            <td>{{ i }}</td>
+            <td>{{ catego.name }}</td>
+
+            <td>
+                <button class="btn btn-danger btn-sm" (click)="removeCetegory(catego.cateID)">
+                    Xóa
+                </button>
+                <button class="btn btn-primary btn-sm" routerLink="edit/{{ catego.cateID }}">
+                    Edit
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

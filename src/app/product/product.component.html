@@ -1,0 +1,48 @@
+<div class="container-fluid px-4">
+
+  <div class="list">
+    <h1>Admin Product</h1>
+    <button class="btn btn-primary btn-sm" routerLink="add">Add</button>
+    <table class="table table-bordered border-dark mt-5">
+      <thead>
+        <th>STT</th>
+        <th>Tên sp</th>
+        <th>Giá sp</th>
+        <th>Action</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products; index as i">
+          <td>{{ i }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="onHandleRemove(product.id)">
+              Xóa
+            </button>
+            <button class="btn btn-primary btn-sm" routerLink="edit/{{ product.id }}">
+              Edit
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- <div *ngIf="detail">
+  Chi tiết sản phảm
+  <app-product-detail ></app-product-detail>
+  
+</div> -->
+    <!-- <div>
+    {{product.name}}
+    <input type="text" [(ngModel)]="product.name">
+</div> -->
+
+    <!--
+    -Interpolation : hiển thị dữ liệu từ component sang view
+    -Property binding : 
+        +hiển thị dữ liệu component sang view (dành cho thẻ a,img)
+        +check trạng thái
+    -Event Binding
+-->
+  </div>
+</div>

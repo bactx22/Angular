@@ -1,0 +1,19 @@
+<div class="edit">
+  <h2>Sửa sản phẩm</h2>
+  <form action="" *ngIf="product">
+    <div class="mb-3">
+      <label for="">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="product.name" name="name" />
+    </div>
+    <div class="mb-3">
+      <label for="">Price</label>
+      <input type="text" class="form-control" [(ngModel)]="product.price" name="price" />
+    </div>
+    <div class="mb-3">
+      <label for="">Mô tả</label>
+      <input type="text" class="form-control" [(ngModel)]="product.description" name="description" />
+    </div>
+    <button class="btn btn-primary" (click)="onEditProduct()">Submit</button>
+  </form>
+
+</div>

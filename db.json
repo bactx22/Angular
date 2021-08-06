@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Tonya Ebert 1",
+      "price": "3000",
+      "description": "Direct",
+      "image": "http://placeimg.com/640/480/cats",
+      "id": "1"
+    },
+    {
+      "name": "Darnell King",
+      "price": "997.00",
+      "description": "Senior",
+      "image": "http://placeimg.com/640/480/nature",
+      "id": "4"
+    },
+    {
+      "name": "bactran 11111111",
+      "price": "2222",
+      "description": "Senior",
+      "image": "http://placeimg.com/640/480/business",
+      "id": "8"
+    }
+  ]
+}

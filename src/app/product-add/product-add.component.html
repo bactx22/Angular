@@ -1,0 +1,23 @@
+<div class="add">
+  <h2>Thêm sản phẩm</h2>
+  <form action="">
+    <div class="mb-3">
+      <label for="">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="product.name" placeholder="Tên sản phẩm" name="name" />
+    </div>
+    <div class="mb-3">
+      <label for="">Price</label>
+      <input type="text" class="form-control" [(ngModel)]="product.price" placeholder="Giá" name="price" />
+    </div>
+    <div class="mb-3">
+      <label for="">Desc</label>
+      <input type="text" class="form-control" [(ngModel)]="product.description" placeholder="Desc" name="Desc" />
+    </div>
+    <div class="mb-3">
+      <label for="">Image</label>
+      <input type="text" class="form-control" [(ngModel)]="product.image" name="image" />
+    </div>
+    <button class="btn btn-primary" (click)="onAddProduct()">Add</button>
+  </form>
+
+</div>
